@@ -1,0 +1,952 @@
+<?xml version="1.0" ?>
+<robot name="Only" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<xacro:include filename="$(find Only_description)/urdf/materials.xacro" />
+<xacro:include filename="$(find Only_description)/urdf/Only.trans" />
+<xacro:include filename="$(find Only_description)/urdf/Only.gazebo" />
+<link name="base_link">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-0.0005481678472587425 0.0004672883105433634 0.04858375980546063"/>
+    <mass value="4.617813684697092"/>
+    <inertia ixx="0.053549" ixy="1.8e-05" ixz="-2e-06" iyy="0.053613" iyz="-1e-06" izz="0.105761"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Only_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Only_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="RubberWheel__19__1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="6.72192752987355e-08 4.335093944929369e-07 5.4518222020183416e-09"/>
+    <mass value="0.0149327963758917"/>
+    <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="-0.0" izz="0.0"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0.122187 0.238539 -0.050602"/>
+    <geometry>
+      <mesh filename="package://Only_description/meshes/RubberWheel__19__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0.122187 0.238539 -0.050602"/>
+    <geometry>
+      <mesh filename="package://Only_description/meshes/RubberWheel__19__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="RubberWheel__20__1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="1.0402291833466748e-07 2.990247199852192e-08 5.392345077404048e-09"/>
+    <mass value="0.0149327963758917"/>
+    <inertia ixx="0.0" ixy="0.0" ixz="-0.0" iyy="0.0" iyz="0.0" izz="0.0"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0.146681 0.224397 -0.050602"/>
+    <geometry>
+      <mesh filename="package://Only_description/meshes/RubberWheel__20__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0.146681 0.224397 -0.050602"/>
+    <geometry>
+      <mesh filename="package://Only_description/meshes/RubberWheel__20__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="RubberWheel__18__1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="5.316830542501094e-08 2.3458956110999907e-08 9.078439291293483e-08"/>
+    <mass value="0.0149327963758917"/>
+    <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="-0.0" izz="0.0"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0.15425 0.220027 -0.023703"/>
+    <geometry>
+      <mesh filename="package://Only_description/meshes/RubberWheel__18__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0.15425 0.220027 -0.023703"/>
+    <geometry>
+      <mesh filename="package://Only_description/meshes/RubberWheel__18__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="RubberWheel__16__1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="8.567393922076505e-08 2.3161439655083882e-07 -3.526443179838537e-07"/>
+    <mass value="0.0149327963758917"/>
+    <inertia ixx="0.0" ixy="0.0" ixz="-0.0" iyy="0.0" iyz="0.0" izz="1e-06"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0.134434 0.231468 -0.007079"/>
+    <geometry>
+      <mesh filename="package://Only_description/meshes/RubberWheel__16__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0.134434 0.231468 -0.007079"/>
+    <geometry>
+      <mesh filename="package://Only_description/meshes/RubberWheel__16__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="RubberWheel__17__1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="1.18139199145606e-07 4.3983977202066704e-07 9.088062883147452e-08"/>
+    <mass value="0.0149327963758917"/>
+    <inertia ixx="0.0" ixy="0.0" ixz="-0.0" iyy="0.0" iyz="0.0" izz="0.0"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0.114618 0.242909 -0.023703"/>
+    <geometry>
+      <mesh filename="package://Only_description/meshes/RubberWheel__17__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0.114618 0.242909 -0.023703"/>
+    <geometry>
+      <mesh filename="package://Only_description/meshes/RubberWheel__17__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="RubberWheel__13__1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="8.566264469989093e-08 -4.63466217875963e-07 -1.1142432294886095e-07"/>
+    <mass value="0.0149327963758917"/>
+    <inertia ixx="0.0" ixy="0.0" ixz="-0.0" iyy="0.0" iyz="0.0" izz="1e-06"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0.128434 0.221075 -0.055197"/>
+    <geometry>
+      <mesh filename="package://Only_description/meshes/RubberWheel__13__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0.128434 0.221075 -0.055197"/>
+    <geometry>
+      <mesh filename="package://Only_description/meshes/RubberWheel__13__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="RubberWheel__14__1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="5.319749671328644e-08 3.283083451488533e-07 4.4505105208092477e-07"/>
+    <mass value="0.0149327963758917"/>
+    <inertia ixx="0.0" ixy="0.0" ixz="-0.0" iyy="0.0" iyz="0.0" izz="0.0"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0.14825 0.209635 -0.038572"/>
+    <geometry>
+      <mesh filename="package://Only_description/meshes/RubberWheel__14__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0.14825 0.209635 -0.038572"/>
+    <geometry>
+      <mesh filename="package://Only_description/meshes/RubberWheel__14__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="RubberWheel__15__1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="1.0411717221714412e-07 3.346388662561761e-07 -4.695203371270218e-07"/>
+    <mass value="0.0149327963758917"/>
+    <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="-0.0" izz="0.0"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0.140681 0.214005 -0.011674"/>
+    <geometry>
+      <mesh filename="package://Only_description/meshes/RubberWheel__15__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0.140681 0.214005 -0.011674"/>
+    <geometry>
+      <mesh filename="package://Only_description/meshes/RubberWheel__15__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="RubberWheel__11__1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="6.731346743893418e-08 -2.617541769722731e-07 -4.694611078857186e-07"/>
+    <mass value="0.0149327963758917"/>
+    <inertia ixx="0.0" ixy="0.0" ixz="-0.0" iyy="0.0" iyz="0.0" izz="0.0"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0.116187 0.228146 -0.011674"/>
+    <geometry>
+      <mesh filename="package://Only_description/meshes/RubberWheel__11__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0.116187 0.228146 -0.011674"/>
+    <geometry>
+      <mesh filename="package://Only_description/meshes/RubberWheel__11__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="RubberWheel__12__1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="1.1816833075939392e-07 -2.553108047198549e-07 4.451466442401131e-07"/>
+    <mass value="0.0149327963758917"/>
+    <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="-0.0" izz="0.0"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0.108618 0.232516 -0.038572"/>
+    <geometry>
+      <mesh filename="package://Only_description/meshes/RubberWheel__12__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0.108618 0.232516 -0.038572"/>
+    <geometry>
+      <mesh filename="package://Only_description/meshes/RubberWheel__12__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="RubberWheel__22__1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="4.281013699647396e-07 -2.2297172462548698e-07 4.465371166925691e-07"/>
+    <mass value="0.0149327963758917"/>
+    <inertia ixx="1e-06" ixy="0.0" ixz="0.0" iyy="0.0" iyz="-0.0" izz="0.0"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.267222 0.022395 -0.038572"/>
+    <geometry>
+      <mesh filename="package://Only_description/meshes/RubberWheel__22__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.267222 0.022395 -0.038572"/>
+    <geometry>
+      <mesh filename="package://Only_description/meshes/RubberWheel__22__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="RubberWheel__21__1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="4.2797832838781247e-07 3.6058249097995973e-07 -1.101440781012264e-07"/>
+    <mass value="0.0149327963758917"/>
+    <inertia ixx="1e-06" ixy="0.0" ixz="-0.0" iyy="0.0" iyz="0.0" izz="1e-06"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.267222 -0.000486 -0.055197"/>
+    <geometry>
+      <mesh filename="package://Only_description/meshes/RubberWheel__21__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.267222 -0.000486 -0.055197"/>
+    <geometry>
+      <mesh filename="package://Only_description/meshes/RubberWheel__21__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="RubberWheel__26__1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="4.2798784988251626e-07 -5.609290593469596e-08 4.46221066763286e-07"/>
+    <mass value="0.0149327963758917"/>
+    <inertia ixx="1e-06" ixy="-0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.267222 -0.023368 -0.038572"/>
+    <geometry>
+      <mesh filename="package://Only_description/meshes/RubberWheel__26__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.267222 -0.023368 -0.038572"/>
+    <geometry>
+      <mesh filename="package://Only_description/meshes/RubberWheel__26__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="RubberWheel__24__1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="4.281167795827656e-07 -4.343611260601565e-08 -4.6830814213853766e-07"/>
+    <mass value="0.0149327963758917"/>
+    <inertia ixx="1e-06" ixy="0.0" ixz="0.0" iyy="0.0" iyz="-0.0" izz="0.0"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.267222 -0.014628 -0.011674"/>
+    <geometry>
+      <mesh filename="package://Only_description/meshes/RubberWheel__24__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.267222 -0.014628 -0.011674"/>
+    <geometry>
+      <mesh filename="package://Only_description/meshes/RubberWheel__24__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="RubberWheel__23__1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="4.281869388500503e-07 -2.3600005509723243e-07 -4.681128127504569e-07"/>
+    <mass value="0.0149327963758917"/>
+    <inertia ixx="1e-06" ixy="-0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.267222 0.013655 -0.011674"/>
+    <geometry>
+      <mesh filename="package://Only_description/meshes/RubberWheel__23__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.267222 0.013655 -0.011674"/>
+    <geometry>
+      <mesh filename="package://Only_description/meshes/RubberWheel__23__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="RubberWheel__29__1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="4.279615868352238e-07 -4.319686793680111e-08 6.542121906705223e-09"/>
+    <mass value="0.0149327963758917"/>
+    <inertia ixx="1e-06" ixy="-0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.255222 -0.014628 -0.050602"/>
+    <geometry>
+      <mesh filename="package://Only_description/meshes/RubberWheel__29__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.255222 -0.014628 -0.050602"/>
+    <geometry>
+      <mesh filename="package://Only_description/meshes/RubberWheel__29__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="RubberWheel__27__1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="4.2803174366001784e-07 -2.357607423661423e-07 6.737698461656283e-09"/>
+    <mass value="0.0149327963758917"/>
+    <inertia ixx="1e-06" ixy="0.0" ixz="0.0" iyy="0.0" iyz="-0.0" izz="0.0"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.255222 0.013655 -0.050602"/>
+    <geometry>
+      <mesh filename="package://Only_description/meshes/RubberWheel__27__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.255222 0.013655 -0.050602"/>
+    <geometry>
+      <mesh filename="package://Only_description/meshes/RubberWheel__27__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="RubberWheel__30__1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="4.281606724165776e-07 -2.2310423913873834e-07 9.220868557591189e-08"/>
+    <mass value="0.0149327963758917"/>
+    <inertia ixx="1e-06" ixy="-0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.255222 0.022395 -0.023703"/>
+    <geometry>
+      <mesh filename="package://Only_description/meshes/RubberWheel__30__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.255222 0.022395 -0.023703"/>
+    <geometry>
+      <mesh filename="package://Only_description/meshes/RubberWheel__30__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="RubberWheel__28__1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="4.281701982411512e-07 3.602204256494433e-07 -3.514264894912897e-07"/>
+    <mass value="0.0149327963758917"/>
+    <inertia ixx="1e-06" ixy="0.0" ixz="-0.0" iyy="0.0" iyz="0.0" izz="1e-06"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.255222 -0.000486 -0.007079"/>
+    <geometry>
+      <mesh filename="package://Only_description/meshes/RubberWheel__28__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.255222 -0.000486 -0.007079"/>
+    <geometry>
+      <mesh filename="package://Only_description/meshes/RubberWheel__28__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="RubberWheel__25__1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="4.2804715605360144e-07 -5.622548624600876e-08 9.189199332709785e-08"/>
+    <mass value="0.0149327963758917"/>
+    <inertia ixx="1e-06" ixy="0.0" ixz="0.0" iyy="0.0" iyz="-0.0" izz="0.0"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.255222 -0.023368 -0.023703"/>
+    <geometry>
+      <mesh filename="package://Only_description/meshes/RubberWheel__25__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.255222 -0.023368 -0.023703"/>
+    <geometry>
+      <mesh filename="package://Only_description/meshes/RubberWheel__25__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="RubberWheel__8__1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="3.4820911906652263e-07 -8.373710350118024e-08 4.459941034540282e-09"/>
+    <mass value="0.0149327963758917"/>
+    <inertia ixx="0.0" ixy="-0.0" ixz="-0.0" iyy="0.0" iyz="-0.0" izz="0.0"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0.146926 -0.225113 -0.050602"/>
+    <geometry>
+      <mesh filename="package://Only_description/meshes/RubberWheel__8__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0.146926 -0.225113 -0.050602"/>
+    <geometry>
+      <mesh filename="package://Only_description/meshes/RubberWheel__8__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="RubberWheel__6__1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="2.9732849624042323e-07 -7.736165283378504e-08 8.987036776569868e-08"/>
+    <mass value="0.0149327963758917"/>
+    <inertia ixx="0.0" ixy="-0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0.154495 -0.220743 -0.023703"/>
+    <geometry>
+      <mesh filename="package://Only_description/meshes/RubberWheel__6__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0.154495 -0.220743 -0.023703"/>
+    <geometry>
+      <mesh filename="package://Only_description/meshes/RubberWheel__6__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="RubberWheel__7__1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="3.2993193790908926e-07 -2.857564357916509e-07 -3.5360645637191185e-07"/>
+    <mass value="0.0149327963758917"/>
+    <inertia ixx="0.0" ixy="-0.0" ixz="0.0" iyy="0.0" iyz="-0.0" izz="1e-06"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0.134679 -0.232184 -0.007079"/>
+    <geometry>
+      <mesh filename="package://Only_description/meshes/RubberWheel__7__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0.134679 -0.232184 -0.007079"/>
+    <geometry>
+      <mesh filename="package://Only_description/meshes/RubberWheel__7__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="RubberWheel__10__1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="3.6248367517310864e-07 -4.940616574466983e-07 8.987037990182412e-08"/>
+    <mass value="0.0149327963758917"/>
+    <inertia ixx="0.0" ixy="-0.0" ixz="-0.0" iyy="0.0" iyz="-0.0" izz="0.0"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0.114863 -0.243625 -0.023703"/>
+    <geometry>
+      <mesh filename="package://Only_description/meshes/RubberWheel__10__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0.114863 -0.243625 -0.023703"/>
+    <geometry>
+      <mesh filename="package://Only_description/meshes/RubberWheel__10__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="RubberWheel__9__1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="3.1151936946693937e-07 -4.875412946969693e-07 4.459947848534096e-09"/>
+    <mass value="0.0149327963758917"/>
+    <inertia ixx="0.0" ixy="-0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0.122432 -0.239255 -0.050602"/>
+    <geometry>
+      <mesh filename="package://Only_description/meshes/RubberWheel__9__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0.122432 -0.239255 -0.050602"/>
+    <geometry>
+      <mesh filename="package://Only_description/meshes/RubberWheel__9__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="RubberWheel__3__1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="3.2982053738139783e-07 4.095066757359156e-07 -1.1233456338743952e-07"/>
+    <mass value="0.0149327963758917"/>
+    <inertia ixx="0.0" ixy="-0.0" ixz="0.0" iyy="0.0" iyz="-0.0" izz="1e-06"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0.128679 -0.221791 -0.055197"/>
+    <geometry>
+      <mesh filename="package://Only_description/meshes/RubberWheel__3__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0.128679 -0.221791 -0.055197"/>
+    <geometry>
+      <mesh filename="package://Only_description/meshes/RubberWheel__3__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="RubberWheel__2__1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="3.624238684579728e-07 2.0111182469362276e-07 4.441889351544659e-07"/>
+    <mass value="0.0149327963758917"/>
+    <inertia ixx="0.0" ixy="-0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0.108863 -0.233232 -0.038572"/>
+    <geometry>
+      <mesh filename="package://Only_description/meshes/RubberWheel__2__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0.108863 -0.233232 -0.038572"/>
+    <geometry>
+      <mesh filename="package://Only_description/meshes/RubberWheel__2__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="RubberWheel__4__1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="3.1154349454387553e-07 2.0748741869081044e-07 -4.704008353239447e-07"/>
+    <mass value="0.0149327963758917"/>
+    <inertia ixx="0.0" ixy="-0.0" ixz="-0.0" iyy="0.0" iyz="-0.0" izz="0.0"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0.116432 -0.228862 -0.011674"/>
+    <geometry>
+      <mesh filename="package://Only_description/meshes/RubberWheel__4__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0.116432 -0.228862 -0.011674"/>
+    <geometry>
+      <mesh filename="package://Only_description/meshes/RubberWheel__4__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="RubberWheel__5__1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="3.4823330657962615e-07 -3.887083538378633e-07 -4.704010895476701e-07"/>
+    <mass value="0.0149327963758917"/>
+    <inertia ixx="0.0" ixy="-0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0.140926 -0.214721 -0.011674"/>
+    <geometry>
+      <mesh filename="package://Only_description/meshes/RubberWheel__5__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0.140926 -0.214721 -0.011674"/>
+    <geometry>
+      <mesh filename="package://Only_description/meshes/RubberWheel__5__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="RubberWheel__1__1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="2.972687514479766e-07 -3.821881348065048e-07 4.4418828081677075e-07"/>
+    <mass value="0.0149327963758917"/>
+    <inertia ixx="0.0" ixy="-0.0" ixz="-0.0" iyy="0.0" iyz="-0.0" izz="0.0"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0.148495 -0.210351 -0.038572"/>
+    <geometry>
+      <mesh filename="package://Only_description/meshes/RubberWheel__1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0.148495 -0.210351 -0.038572"/>
+    <geometry>
+      <mesh filename="package://Only_description/meshes/RubberWheel__1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="WheelBase__3__1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="0.00256897250893548 0.004456385205079627 3.309601156398917e-06"/>
+    <mass value="0.14657737338783688"/>
+    <inertia ixx="2.9e-05" ixy="6e-06" ixz="-0.0" iyy="3.7e-05" iyz="-0.0" izz="2.6e-05"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0.133884 0.230515 -0.031138"/>
+    <geometry>
+      <mesh filename="package://Only_description/meshes/WheelBase__3__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0.133884 0.230515 -0.031138"/>
+    <geometry>
+      <mesh filename="package://Only_description/meshes/WheelBase__3__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="WheelBase__5__1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-0.009043479736456861 3.901943215357004e-06 -3.7724220747561987e-06"/>
+    <mass value="0.14657737338734944"/>
+    <inertia ixx="4e-05" ixy="0.0" ixz="-0.0" iyy="2.6e-05" iyz="0.0" izz="2.6e-05"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.270022 -0.000486 -0.031138"/>
+    <geometry>
+      <mesh filename="package://Only_description/meshes/WheelBase__5__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.270022 -0.000486 -0.031138"/>
+    <geometry>
+      <mesh filename="package://Only_description/meshes/WheelBase__5__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="WheelBase__1__1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="0.00452535084651165 -0.00783089771441381 3.3086660311335003e-06"/>
+    <mass value="0.14657737338765658"/>
+    <inertia ixx="2.9e-05" ixy="-6e-06" ixz="-0.0" iyy="3.7e-05" iyz="0.0" izz="2.6e-05"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0.136079 -0.234609 -0.031138"/>
+    <geometry>
+      <mesh filename="package://Only_description/meshes/WheelBase__1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0.136079 -0.234609 -0.031138"/>
+    <geometry>
+      <mesh filename="package://Only_description/meshes/WheelBase__1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="Rev4" type="continuous">
+  <origin rpy="0 0 0" xyz="0.011697 -0.008024 0.019464"/>
+  <parent link="WheelBase__3__1"/>
+  <child link="RubberWheel__19__1"/>
+  <axis xyz="0.700629 -0.404509 -0.587785"/>
+</joint>
+
+<joint name="Rev5" type="continuous">
+  <origin rpy="0 0 0" xyz="-0.012797 0.006118 0.019464"/>
+  <parent link="WheelBase__3__1"/>
+  <child link="RubberWheel__20__1"/>
+  <axis xyz="0.700629 -0.404508 0.587785"/>
+</joint>
+
+<joint name="Rev6" type="continuous">
+  <origin rpy="0 0 0" xyz="-0.020366 0.010488 -0.007435"/>
+  <parent link="WheelBase__3__1"/>
+  <child link="RubberWheel__18__1"/>
+  <axis xyz="-0.267617 0.154509 0.951057"/>
+</joint>
+
+<joint name="Rev7" type="continuous">
+  <origin rpy="0 0 0" xyz="-0.00055 -0.000953 -0.024059"/>
+  <parent link="WheelBase__3__1"/>
+  <child link="RubberWheel__16__1"/>
+  <axis xyz="-0.866025 0.5 -0.0"/>
+</joint>
+
+<joint name="Rev8" type="continuous">
+  <origin rpy="0 0 0" xyz="0.019266 -0.012394 -0.007435"/>
+  <parent link="WheelBase__3__1"/>
+  <child link="RubberWheel__17__1"/>
+  <axis xyz="-0.267617 0.154508 -0.951057"/>
+</joint>
+
+<joint name="Rev9" type="continuous">
+  <origin rpy="0 0 0" xyz="0.00545 0.00944 0.024059"/>
+  <parent link="WheelBase__3__1"/>
+  <child link="RubberWheel__13__1"/>
+  <axis xyz="0.866025 -0.5 0.0"/>
+</joint>
+
+<joint name="Rev10" type="continuous">
+  <origin rpy="0 0 0" xyz="-0.014366 0.02088 0.007434"/>
+  <parent link="WheelBase__3__1"/>
+  <child link="RubberWheel__14__1"/>
+  <axis xyz="0.267617 -0.154508 0.951057"/>
+</joint>
+
+<joint name="Rev11" type="continuous">
+  <origin rpy="0 0 0" xyz="-0.006797 0.01651 -0.019464"/>
+  <parent link="WheelBase__3__1"/>
+  <child link="RubberWheel__15__1"/>
+  <axis xyz="-0.700629 0.404509 0.587785"/>
+</joint>
+
+<joint name="Rev12" type="continuous">
+  <origin rpy="0 0 0" xyz="0.017697 0.002369 -0.019464"/>
+  <parent link="WheelBase__3__1"/>
+  <child link="RubberWheel__11__1"/>
+  <axis xyz="-0.700629 0.404508 -0.587785"/>
+</joint>
+
+<joint name="Rev13" type="continuous">
+  <origin rpy="0 0 0" xyz="0.025266 -0.002001 0.007434"/>
+  <parent link="WheelBase__3__1"/>
+  <child link="RubberWheel__12__1"/>
+  <axis xyz="0.267617 -0.154509 -0.951057"/>
+</joint>
+
+<joint name="Rev14" type="continuous">
+  <origin rpy="0 0 0" xyz="-0.0028 -0.022881 0.007434"/>
+  <parent link="WheelBase__5__1"/>
+  <child link="RubberWheel__22__1"/>
+  <axis xyz="-0.0 0.309017 0.951057"/>
+</joint>
+
+<joint name="Rev15" type="continuous">
+  <origin rpy="0 0 0" xyz="-0.0028 0.0 0.024059"/>
+  <parent link="WheelBase__5__1"/>
+  <child link="RubberWheel__21__1"/>
+  <axis xyz="-0.0 1.0 -0.0"/>
+</joint>
+
+<joint name="Rev16" type="continuous">
+  <origin rpy="0 0 0" xyz="-0.0028 0.022882 0.007434"/>
+  <parent link="WheelBase__5__1"/>
+  <child link="RubberWheel__26__1"/>
+  <axis xyz="0.0 0.309017 -0.951057"/>
+</joint>
+
+<joint name="Rev17" type="continuous">
+  <origin rpy="0 0 0" xyz="-0.0028 0.014142 -0.019464"/>
+  <parent link="WheelBase__5__1"/>
+  <child link="RubberWheel__24__1"/>
+  <axis xyz="0.0 -0.809017 -0.587785"/>
+</joint>
+
+<joint name="Rev18" type="continuous">
+  <origin rpy="0 0 0" xyz="-0.0028 -0.014141 -0.019464"/>
+  <parent link="WheelBase__5__1"/>
+  <child link="RubberWheel__23__1"/>
+  <axis xyz="-0.0 -0.809017 0.587785"/>
+</joint>
+
+<joint name="Rev19" type="continuous">
+  <origin rpy="0 0 0" xyz="-0.0148 0.014142 0.019464"/>
+  <parent link="WheelBase__5__1"/>
+  <child link="RubberWheel__29__1"/>
+  <axis xyz="0.0 0.809017 -0.587785"/>
+</joint>
+
+<joint name="Rev20" type="continuous">
+  <origin rpy="0 0 0" xyz="-0.0148 -0.014141 0.019464"/>
+  <parent link="WheelBase__5__1"/>
+  <child link="RubberWheel__27__1"/>
+  <axis xyz="-0.0 0.809017 0.587785"/>
+</joint>
+
+<joint name="Rev21" type="continuous">
+  <origin rpy="0 0 0" xyz="-0.0148 -0.022881 -0.007435"/>
+  <parent link="WheelBase__5__1"/>
+  <child link="RubberWheel__30__1"/>
+  <axis xyz="-0.0 -0.309017 0.951057"/>
+</joint>
+
+<joint name="Rev22" type="continuous">
+  <origin rpy="0 0 0" xyz="-0.0148 0.0 -0.024059"/>
+  <parent link="WheelBase__5__1"/>
+  <child link="RubberWheel__28__1"/>
+  <axis xyz="0.0 -1.0 0.0"/>
+</joint>
+
+<joint name="Rev23" type="continuous">
+  <origin rpy="0 0 0" xyz="-0.0148 0.022882 -0.007435"/>
+  <parent link="WheelBase__5__1"/>
+  <child link="RubberWheel__25__1"/>
+  <axis xyz="0.0 -0.309017 -0.951057"/>
+</joint>
+
+<joint name="Rev24" type="continuous">
+  <origin rpy="0 0 0" xyz="-0.010847 -0.009496 0.019464"/>
+  <parent link="WheelBase__1__1"/>
+  <child link="RubberWheel__8__1"/>
+  <axis xyz="-0.700629 -0.404508 -0.587785"/>
+</joint>
+
+<joint name="Rev25" type="continuous">
+  <origin rpy="0 0 0" xyz="-0.018416 -0.013866 -0.007435"/>
+  <parent link="WheelBase__1__1"/>
+  <child link="RubberWheel__6__1"/>
+  <axis xyz="0.267617 0.154508 -0.951057"/>
+</joint>
+
+<joint name="Rev26" type="continuous">
+  <origin rpy="0 0 0" xyz="0.0014 -0.002425 -0.024059"/>
+  <parent link="WheelBase__1__1"/>
+  <child link="RubberWheel__7__1"/>
+  <axis xyz="0.866025 0.5 0.0"/>
+</joint>
+
+<joint name="Rev27" type="continuous">
+  <origin rpy="0 0 0" xyz="0.021216 0.009016 -0.007435"/>
+  <parent link="WheelBase__1__1"/>
+  <child link="RubberWheel__10__1"/>
+  <axis xyz="0.267617 0.154508 0.951057"/>
+</joint>
+
+<joint name="Rev28" type="continuous">
+  <origin rpy="0 0 0" xyz="0.013647 0.004646 0.019464"/>
+  <parent link="WheelBase__1__1"/>
+  <child link="RubberWheel__9__1"/>
+  <axis xyz="-0.700629 -0.404508 0.587785"/>
+</joint>
+
+<joint name="Rev29" type="continuous">
+  <origin rpy="0 0 0" xyz="0.0074 -0.012818 0.024059"/>
+  <parent link="WheelBase__1__1"/>
+  <child link="RubberWheel__3__1"/>
+  <axis xyz="-0.866025 -0.5 0.0"/>
+</joint>
+
+<joint name="Rev30" type="continuous">
+  <origin rpy="0 0 0" xyz="0.027216 -0.001377 0.007434"/>
+  <parent link="WheelBase__1__1"/>
+  <child link="RubberWheel__2__1"/>
+  <axis xyz="-0.267617 -0.154508 0.951057"/>
+</joint>
+
+<joint name="Rev31" type="continuous">
+  <origin rpy="0 0 0" xyz="0.019647 -0.005747 -0.019464"/>
+  <parent link="WheelBase__1__1"/>
+  <child link="RubberWheel__4__1"/>
+  <axis xyz="0.700629 0.404508 0.587785"/>
+</joint>
+
+<joint name="Rev32" type="continuous">
+  <origin rpy="0 0 0" xyz="-0.004847 -0.019888 -0.019464"/>
+  <parent link="WheelBase__1__1"/>
+  <child link="RubberWheel__5__1"/>
+  <axis xyz="0.700629 0.404508 -0.587785"/>
+</joint>
+
+<joint name="Rev33" type="continuous">
+  <origin rpy="0 0 0" xyz="-0.012416 -0.024258 0.007434"/>
+  <parent link="WheelBase__1__1"/>
+  <child link="RubberWheel__1__1"/>
+  <axis xyz="-0.267617 -0.154508 -0.951057"/>
+</joint>
+
+<joint name="Rev3" type="continuous">
+  <origin rpy="0 0 0" xyz="-0.133884 -0.230515 0.031138"/>
+  <parent link="base_link"/>
+  <child link="WheelBase__3__1"/>
+  <axis xyz="-0.5 -0.866025 0.0"/>
+</joint>
+
+<joint name="Rev1" type="continuous">
+  <origin rpy="0 0 0" xyz="0.270022 0.000486 0.031138"/>
+  <parent link="base_link"/>
+  <child link="WheelBase__5__1"/>
+  <axis xyz="1.0 0.0 0.0"/>
+</joint>
+
+<joint name="Rev2" type="continuous">
+  <origin rpy="0 0 0" xyz="-0.136079 0.234609 0.031138"/>
+  <parent link="base_link"/>
+  <child link="WheelBase__1__1"/>
+  <axis xyz="-0.5 0.866025 -0.0"/>
+</joint>
+
+</robot>
